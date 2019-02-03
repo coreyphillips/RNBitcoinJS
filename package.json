@@ -1,0 +1,56 @@
+{
+  "name": "RNBitcoinJS",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "postinstall": "rn-nodeify --install buffer,stream,assert,events,crypto,vm --hack && cd node_modules/bs58 && yarn add base-x@3.0.4 && cd ../../"
+  },
+  "dependencies": {
+    "assert": "^1.4.1",
+    "buffer": "5",
+    "buffer-reverse": "^1.0.1",
+    "crypto": "^1.0.1",
+    "events": "^1.1.1",
+    "react": "16.6.3",
+    "react-native": "0.58.3",
+    "react-native-crypto": "^2.1.2",
+    "react-native-randombytes": "^3.5.2",
+    "readable-stream": "^1.0.33",
+    "rn-bitcoinjs-lib": "^4.0.3",
+    "stream-browserify": "^1.0.0",
+    "vm-browserify": "0.0.4"
+  },
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "24.0.0",
+    "jest": "24.0.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-test-renderer": "16.6.3",
+    "rn-nodeify": "^10.0.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "react-native": {
+    "crypto": "react-native-crypto",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify",
+    "vm": "vm-browserify"
+  },
+  "browser": {
+    "crypto": "react-native-crypto",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify",
+    "vm": "vm-browserify"
+  }
+}
