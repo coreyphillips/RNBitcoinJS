@@ -2,6 +2,8 @@
  * @format
  * @lint-ignore-every XPLATJSCOPYRIGHT1
  */
+import 'node-libs-react-native/globals';
+import './globals.js';
 
 import {AppRegistry} from 'react-native';
 import App from './App';
