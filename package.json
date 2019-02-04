@@ -20,7 +20,7 @@
     "readable-stream": "^1.0.33",
     "rn-bitcoinjs-lib": "^4.0.3",
     "stream-browserify": "^1.0.0",
-    "vm-browserify": "0.0.4"
+    "vm-browserify": "^1.1.0"
   },
   "devDependencies": {
     "babel-core": "^7.0.0-bridge.0",
